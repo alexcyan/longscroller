@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tiny Heroes</title>
+      <link rel="stylesheet" href="css/normalize.css" media="screen">
+      <link rel="stylesheet" href="css/app.css" media="screen">
+      <link rel="stylesheet" href="css/foundation.css" media="screen">
+      <link rel="stylesheet" href="css/main.css" media="screen">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat|Oswald|Passion+One|Quicksand|Slabo+27px" rel="stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="js/hero.js"></script>
+
+  </head>
+
+
+  <body>
+    <section id="wrapper">
+
+<!-- BEGINNING OF INTRO -->
+    <section class="row intro">
+      <figure class="columns large-12 medium-12 small-12 introbox">
+        <h1>TINY<br>HEROES</h1>
+        <h2>The Web Based Adventure Game</h2>
+        <img id="campsign" src="images/camp.png" alt=""/>
+        <img id="campground" src="images/basecamp.png" alt=""/>
+        <img id="city" src="images/city.png" alt=""/>
+        <img id="city2" src="images/city2.png" alt=""/>
+      </figure>
+    </section>
+<!-- END OF INTRO -->
+
+<!-- BEGINNING OF HERO SELECTOR -->
+    <section class="row one">
+      <figure>
+        <h2>PICK A HERO</h2>
+
+
+            <figure class="columns large-6 medium-6 small-6 hero lport">
+              <h3>HERO &num; 1</h3>
+              <img src="images/av1.png" alt="Avatar 1"/>
+                  <div class="columns large-7 medium-7 small-7">
+                        <p>This is <strong>Calvin</strong>, he is the most resourceful fighter of our team. If you're looking to do some serious work, this is the guy.</p>
+                        <button id="button_1" name="character" class="herobuttons"></button>
+                  </div>
+            </figure>
+
+            <figure class="columns large-6 medium-6 small-6 hero rport">
+              <h3>HERO &num; 2</h3>
+                  <div class="columns large-7 medium-7 small-7">
+                        <p>This is <strong>Troy</strong>, he puts the zombies in their place and provides safety for the team. He's the bringer of pain, no doubt about it.</p>
+                      <button id="button_2" name="character" class="herobuttons"></button>
+                  </div>
+                      <img src="images/av2.png" alt="Avatar 2"/>
+            </figure>
+
+            <figure class="columns large-6 medium-6 small-6 hero2 lport">
+              <h3>HERO &num; 3</h3>
+              <img src="images/av3.png" alt="Avatar 3"/>
+                  <div class="columns large-7 medium-7 small-7">
+                        <p>This is <strong>Cindy</strong>, she is the smartest and most brutal of our team. Don't let her looks fool ya, she can kill a horde of zombies faster than anyone.</p>
+                        <button id="button_3" name="character" class="herobuttons"></button>
+                  </div>
+            </figure>
+
+            <figure class="columns large-6 medium-6 small-6 hero2 rport">
+              <h3>HERO &num; 4</h3>
+                  <div class="columns large-7 medium-7 small-7">
+                        <p>This is <strong>Alana</strong>, she holds the team together and scouts uncharted areas. Killing zombies is a cakewalk for her and she doesn't need backup.</p>
+                    <button id="button_4" name="character" class="herobuttons"></button>
+                  </div>
+                    <img src="images/av4.png" alt="Avatar 4"/>
+            </figure>
+      </figure>
+    </section>
+<!-- END OF HERO SELECTOR -->
+
+<!-- BEGINNING OF CUSTOMIZATION -->
+    <section class="row lands gear">
+      <h2>GET GEARED UP FOR THE ROAD AHEAD!</h2>
+      <div class="columns large-8 medium-8 small-8 inventory">
+              <h3 class="columns large-4 medium-4 small-4">HEAD<img class="category" src="images/head.png" alt="head shape"/></h3>
+              <h3 class="columns large-4 medium-4 small-4">BODY<img class="category" src="images/body.png" alt="body shape"/></h3>
+              <h3 class="columns large-4 medium-4 small-4">WEAPON<img class="category" src="images/weapon.png" alt="weapon shape"/></h3>
+          <figure id="radio" class="columns large-4 medium-4 small-4 head">
+
+                <div class="columns large-6 medium-6 small-6 headgear">
+                  <button id="radio1" name="head" value="vandal"><img src="images/hat_4.png" alt="bandit mask"/></button>
+                  <figcaption>Vandal Mask</figcaption>
+                </div>
+
+                <div class="columns large-6 medium-6 small-6 headgear">
+                  <button id="radio2" name="head" value="laser"><img src="images/hat_2.png" alt="laser goggles"/></button>
+                  <figcaption>Laser Goggles</figcaption>
+                </div>
+
+                <div class="columns large-6 medium-6 small-6 headgear">
+                  <button id="radio3" name="head" value="gas"><img src="images/hat_5.png" alt="gas mask"/></button>
+                  <figcaption>Gas Mask</figcaption>
+                </div>
+
+                <div class="columns large-6 medium-6 small-6 headgear">
+                  <button id="radio4" name="head" value="summer"><img src="images/hat_1.png" alt="dress hat"/></button>
+                  <figcaption>Summer Hat</figcaption>
+                </div>
+
+                <div class="columns large-6 medium-6 small-6 headgear">
+                  <button id="radio5" name="head" value="snap"><img src="images/hat_6.png" alt="baseball cap"/></button>
+                  <figcaption>Snapback</figcaption>
+                </div>
+
+                <div class="columns large-6 medium-6 small-6 headgear">
+                  <button id="radio6" name="head" value="wolf"><img src="images/hat_3.png" alt="wolf mask"/></button>
+                  <figcaption>Wolf Mask</figcaption>
+                </div>
+
+          </figure>
+
+          <figure class="columns large-4 medium-4 small-4 body">
+
+              <div class="columns large-6 medium-6 small-6 bodygear">
+                <button id="radio7" name="head" value="camo"><img src="images/body_4.png" alt="camo shirt"/></button>
+                <figcaption>Camo Shirt</figcaption>
+              </div>
+
+              <div class="columns large-6 medium-6 small-6 bodygear">
+                <button id="radio8" name="head" value="bloody"><img src="images/body_1.png" alt="bloody dress"/></button>
+                <figcaption>Bloody Dress</figcaption>
+              </div>
+
+              <div class="columns large-6 medium-6 small-6 bodygear">
+                <button id="radio9" name="head" value="hoodie"><img src="images/body_5.png" alt="red hoodie"/></button>
+                <figcaption>Red Hoodie</figcaption>
+              </div>
+
+              <div class="columns large-6 medium-6 small-6 bodygear">
+                <button id="radio10" name="head" value="tribal"><img src="images/body_2.png" alt="tribal outfit"/></button>
+                <figcaption>Tribal Outfit</figcaption>
+              </div>
+
+              <div class="columns large-6 medium-6 small-6 bodygear">
+                <button id="radio11" name="head" value="armor"><img src="images/body_6.png" alt="plate of armor"/></button>
+                <figcaption>Knight's Armor</figcaption>
+              </div>
+
+              <div class="columns large-6 medium-6 small-6 bodygear">
+                <button id="radio12" name="head" value="mech"><img src="images/body_3.png" alt="mech suit"/></button>
+                <figcaption>Mech Suit</figcaption>
+              </div>
+
+          </figure>
+
+          <figure class="columns large-4 medium-4 small-4 weapon">
+
+            <div class="columns large-6 medium-6 small-6 weaponz">
+              <button id="radio13" name="head" value="machete"><img src="images/weapon_4.png" alt="machete"/></button>
+              <figcaption>Worn Machete</figcaption>
+            </div>
+
+            <div class="columns large-6 medium-6 small-6 weaponz">
+              <button id="radio14" name="head" value="axe"><img src="images/weapon_1.png" alt="battle axe"/></button>
+              <figcaption>Battle Axe</figcaption>
+            </div>
+
+            <div class="columns large-6 medium-6 small-6 weaponz">
+              <button id="radio15" name="head" value="pick"><img src="images/weapon_5.png" alt="ice pick"/></button>
+              <figcaption>Climbing Pick</figcaption>
+            </div>
+
+            <div class="columns large-6 medium-6 small-6 weaponz">
+              <button id="radio16" name="head" value="tanto"><img src="images/weapon_2.png" alt="tanto blade"/></button>
+              <figcaption>Tanto Blade</figcaption>
+            </div>
+
+            <div class="columns large-6 medium-6 small-6 weaponz">
+              <button id="radio17" name="head" value="revolver"><img src="images/weapon_6.png" alt="six-shooter"/></button>
+              <figcaption>Six-Shooter</figcaption>
+            </div>
+
+            <div class="columns large-6 medium-6 small-6 weaponz">
+              <button id="radio18" name="head" value="pistol"><img src="images/weapon_3.png" alt="pistol"/></button>
+              <figcaption>9mm Handgun</figcaption>
+            </div>
+
+          </figure>
+      </div>
+
+      <div class="columns large-4 medium-4 small-4 avatar">
+          <div id="player">
+                  <div class="avatar1, avatar2, avatar3, avatar4" id="herofinal"></div>
+                  <div class="gear1, gear2, gear3, gear4, gear5, gear6" id="head"></div>
+                  <div class="gear7, gear8, gear9 gear10, gear11, gear12" id="body"><div>
+                  <div class="gear13, gear14, gear15, gear16, gear17" id="weapon"></div>
+          </div>
+      </div>
+    </section>
+<!-- END OF CUSTOMIZATION -->
+
+<!-- BEGINNING OF HERO QUEST -->
+    <section class="row name">
+          <figure class="columns large-12 medium-12 small-12 avname">
+            <h2>WHAT SHALL WE CALL YOU?</h2>
+            <h3><em>TYPE YOUR NAME HERE</em></h3>
+            <p><span>You</span> are given the task of battling your way to the source of the zombies and as the last chance for humanity you must succeed in destroying the source itself!</p>
+          </figure>
+
+          <figure class="columns large-12 medium-12 small-12 picker">
+
+            <div class="columns large-6 medium-6 small-6 lgateop" id="lgate">
+              <img src="images/gate1.png" alt=""/>
+            </div>
+
+            <div class="columns large-6 medium-6 small-6 rgateop" id="rgate">
+              <img src="images/gate2.png" alt=""/>
+            </div>
+
+            <img class="large-12 medium-12 small-12" id="ground" src="images/land1.png" alt=""/>
+
+            <img class="large-12 medium-12 small-12" id="ground2" src="images/land2.png" alt=""/>
+
+            <img class="large-12 medium-12 small-12" id="ground3" src="images/land3.png" alt=""/>
+
+            <img class="large-12 medium-12 small-12" id="ground4" src="images/land4.png" alt=""/>
+
+            <img class="large-12 medium-12 small-12" id="ground5" src="images/land5.png" alt=""/>
+
+            <img class="large-12 medium-12 small-12" id="ground6" src="images/land6.png" alt=""/>
+
+            <div id="herofinal2">
+
+                        <div class="avatar1, avatar2, avatar3, avatar4" id="herobase"></div>
+                        <div class="gear1, gear2, gear3, gear4, gear5, gear6" id="head2"></div>
+                        <div class="gear7, gear8, gear9 gear10, gear11, gear12" id="body2"><div>
+                        <div class="gear13, gear14, gear15, gear16, gear17" id="weapon2"></div>
+            </div>
+
+          </figure>
+    </section>
+<!-- END OF HERO QUEST -->
+
+<!-- BEGINNING OF CHAPTER 1 -->
+    <section class="row scenery">
+
+      <figure class="horizon">
+        <h3>This is what the world looks like now...It's come crumbling down and the best things in life have all been lost. There's got to be something in all this mess that'll help us to rebuild from what little we have left. That's why we need you to do your best to search for the source of all this chaos and destroy it before it becomes to powerful. We have faith in you hero!</h3>
+
+        <img src="https://www.placehold.it/1200x200/000000/ffffff" alt=""/>
+          <img src="https://www.placehold.it/1200x120/111111/ffffff" alt=""/>
+            <img src="https://www.placehold.it/1200x100/222222/ffffff" alt=""/>
+              <img src="https://www.placehold.it/1200x80/333333/ffffff" alt=""/>
+                <img src="https://www.placehold.it/1200x50/444444/ffffff" alt=""/>
+      </figure>
+
+    </section>
+<!-- END OF CHAPTER 1 -->
+
+<!-- BEGINNING OF CHAPTER 2 -->
+    <section class="row battle">
+      <h2>Forward Into The Depths of Despair!</h2>
+      <figure>
+
+      </figure>
+    </section>
+<!-- END OF CHAPTER 2 -->
+<!-- BEGINNING OF ZOMBIE -->
+    <section class="row zombie six">
+      <figure class="columns large-12 medium-12 small-12 brief">
+        <div id="zbox">
+          <img id="zhead" src="images/zhead.png" alt=""/>
+          <img id="zbody" src="images/zbody.png" alt=""/>
+          <img id="zlarm" src="images/zleftarm.png" alt=""/>
+          <img id="zrarm" src="images/zrightarm.png" alt=""/>
+          <img id="zspine" src="images/zspine.png" alt=""/>
+          <img id="zlfoot" src="images/zleftfoot.png" alt=""/>
+          <img id="zrfoot" src="images/zrightfoot.png" alt=""/>
+        </div>
+        <figcaption>This is what you're dealing with...A mangled mutated mess of a monster that just keeps spreading. We don't know exactly where they came from or how this all started, but there has to be some origin. Your job is going to be to locate the source of all this chaos and destroy whatever it is that continues to morph humans into these zombies. Good luck and remember to aim for the head! </figcaption>
+      </figure>
+    </section>
+<!-- END OF ZOMBIE -->
+    <section class="row lands seven">
+    </section>
+
+    <section class="row lands eight">
+    </section>
+
+    <section class="row lands nine">
+    </section>
+
+    <section class="row lands ten">
+    </section>
+
+<div id="counter">counter</div>
+
+</section>
+
+  </body>
+</html>

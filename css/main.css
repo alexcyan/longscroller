@@ -1,0 +1,830 @@
+/* BEGINNING OF PRESET STYLING */
+body {
+  background-color: black;
+}
+#wrapper {
+  height: 8000px;
+  border: 1px solid red;
+  margin: 0 auto;
+  position: relative;
+}
+.gear {
+  background-color: white;
+}
+section {
+outline: 1px solid black;
+height: 800px;
+font-family: Verdana, arial, sans-serif;
+font-size: 14px;
+}
+figure {
+  margin: 0px;
+}
+.horizon {
+  background-color: white;
+}
+/* END OF PRESET STYLING */
+
+/* BEGINNING OF INTRO STYLING */
+
+
+.intro {
+  text-align: center;
+}
+.introbox {
+  height: 800px;
+  background-image: url("../images/sky.png");
+  position: relative;
+  overflow: hidden;
+}
+.intro h1 {
+  font-size: 120px;
+  font-weight: bold;
+  letter-spacing: -8px;
+  margin-top: 40px;
+  height: 200px;
+  line-height: 120px;
+  font-family: 'Oswald', sans-serif;
+}
+.intro h2 {
+  margin-top: 40px;
+  font-size: 20px;
+  height: 60px;
+  line-height: 20px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+}
+.intro #campsign {
+  position: absolute;
+  margin-top: 40px;
+  left: 410px;
+  z-index: 981;
+}
+.intro #campground {
+  position: absolute;
+  margin-bottom: 40px;
+  left: 0px;
+  top: 700px;
+  z-index: 980;
+}
+.intro #city {
+  position: absolute;
+  z-index: 979;
+  left: 0px;
+  top: 0px;
+}
+.intro #city2 {
+  position: absolute;
+  z-index: 978;
+  left: 0px;
+  top: 0px;
+}
+/* END OF INTRO STYLING */
+
+/* BEGINNING OF HERO SELECTOR STYLING */
+.one {
+  background-color: black;
+}
+.one h2 {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 80px;
+  font-weight: bold;
+  font-family: 'Oswald', sans-serif;
+  color: white;
+}
+.one h3 {
+  padding-top: 10px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+.one p {
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+  font-size: 16px;
+}
+.one #button_1, .one #button_2, .one #button_3, .one #button_4 {
+  width: 250px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+}
+.hero, .hero2 {
+  height: 300px;
+}
+.hero img {
+  margin-top: -40px;
+}
+.hero2 img {
+  margin-top: -40px;
+}
+.lport {
+  background-image: url("../images/portalleft.png");
+}
+.rport {
+  background-image: url("../images/portalright.png");
+}
+.lport p {
+  padding-left: 60px;
+  padding-right: 40px;
+}
+.rport p {
+  padding-left: 40px;
+  padding-right: 60px;
+}
+.lport h3 {
+  margin-left: 250px;
+}
+.lport #button_1, .lport #button_3 {
+  margin-left: 40px;
+}
+.rport h3 {
+  margin-left: -250px;
+}
+.rport #button_2, .rport #button_4 {
+  margin-left: 20px;
+}
+.lport img, .rport img {
+margin-left: 70px;
+margin-top: 10px;
+}
+.lport img:hover, .rport img:hover {
+  opacity: .6;
+}
+.herobuttons {
+  background-color: #00E8FF;
+  color: black;
+  letter-spacing: 5px;
+  border-radius: 15px;
+}
+.herobuttons:hover {
+  background-color: orange;
+  color: white;
+}
+/*END Of HERO SELECTOR STYLING */
+
+/* BEGINNING OF GEAR STYLING */
+.gear h2 {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 40px;
+  font-family: 'Oswald', sans-serif;
+}
+.gear figcaption {
+  font-family: 'Oswald', sans-serif;
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-align: center;
+  font-weight: bold;
+  padding: 20px 0px;
+}
+.inventory .category {
+  width: 40px;
+  height: 40px;
+  border-radius: 0px;
+  position: relative;
+}
+.head img:hover, .body img:hover, .weapon img:hover {
+  opacity: .6;
+  background-color: orange;
+}
+.inventory h3 {
+  margin-top: 40px;
+  display: inline;
+  text-align: center;
+  font-size: 24px;
+  font-family: 'Montserrat', sans-serif;
+}
+.inventory img {
+  border-radius: 80px;
+}
+.inventory .head, .inventory .body, .inventory .weapon {
+  margin-top: 40px;
+}
+.avatar #player {
+  height: 600px;
+}
+.avatar h3 {
+  text-align: center;
+}
+.avatar span {
+  color: blue;
+}
+/* END OF GEAR STYLING */
+
+/* BEGINNING OF HERO CUSTOM DISPLAY */
+#player {
+  position: relative;
+}
+#herofinal {
+  position: absolute;
+  left: 80px;
+  width: 200px;
+  height: 280px;
+  z-index: 995;
+  -webkit-animation-name: hero;
+  -webkit-animation-duration: 6s;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: hero;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes hero {
+  0% {top: 140px;}
+  25% {top: 141px;}
+  50% {top: 142px;}
+  75% {top: 143px;}
+  100% {top: 142px;}
+}
+@keyframes hero{
+  0% {top: 140px;}
+  25% {top: 141px;}
+  50% {top: 142px;}
+  75% {top: 143px;}
+  100% {top: 142px;}
+}
+#head {
+  position: absolute;
+  left: 110px;
+  width: 140px;
+  height: 140px;
+  z-index: 999;
+  background-size: contain;
+  -webkit-animation-name: headgear;
+  -webkit-animation-duration: 1.8s;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: headgear;
+  animation-duration: 1.8s;
+  animation-iteration-count: infinite;
+
+}
+@-webkit-keyframes headgear {
+  0% {top: 140px;}
+  25% {top: 142px;}
+  50% {top: 143px;}
+  75% {top: 144px;}
+  100% {top: 141px;}
+}
+@keyframes headgear {
+  0% {top: 140px;}
+  25% {top: 142px;}
+  50% {top: 143px;}
+  75% {top: 144px;}
+  100% {top: 141px;}
+}
+#body {
+  position: absolute;
+  left: 105px;
+  width: 150px;
+  height: 150px;
+  z-index: 997;
+  background-size: contain;
+  -webkit-animation-name: bodygear;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: bodygear;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes bodygear {
+  0% {top: 220px;}
+  25% {top: 224px;}
+  50% {top: 222px;}
+  75% {top: 223px;}
+  100% {top: 221px;}
+}
+@keyframes bodygear {
+  0% {top: 220px;}
+  25% {top: 224px;}
+  50% {top: 222px;}
+  75% {top: 223px;}
+  100% {top: 221px;}
+}
+#weapon {
+  position: absolute;
+  left: 40px;
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+  z-index: 996;
+  -webkit-animation-name: weapon;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: weapon;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes weapon {
+  0% {top: 75px;}
+  25% {top: 77px;}
+  50% {top: 78px;}
+  75% {top: 79px;}
+  100% {top: 76px;}
+}
+@keyframes weapon {
+  0% {top: 75px;}
+  25% {top: 77px;}
+  50% {top: 78px;}
+  75% {top: 79px;}
+  100% {top: 76px;}
+}
+/* END OF HERO CUSTOM DISPLAY */
+
+/* BEGINNING OF HERO NAME STYLING */
+.avname {
+  height: 300px;
+  text-align: center;
+  background-color: rgba(255,255,5,.4);
+  display: none;
+}
+.avname h2 {
+  margin-top: 40px;
+  font-weight: bold;
+  letter-spacing: -2px;
+}
+.avname p {
+  font-size: 24px;
+  padding: 0px 200px;
+}
+.avname span {
+  color: blue;
+}
+/* BEGINNING OF GATE STYLING */
+.picker {
+  text-align: center;
+  width: 1200px;
+  height: 720px;
+  background-color: #5AD3FF;
+  position: relative;
+}
+#ground, #ground2, #ground3, #ground4, #ground5, #ground6, #lgate, #rgate {
+  position: absolute;
+}
+#ground, #ground2, #ground3, #ground4, #ground5, #ground6 {
+  left: 0px;
+}
+#ground {
+  top: 100px;
+  z-index: 997;
+}
+#ground2 {
+  top: 40px;
+  z-index: 996;
+}
+#ground3 {
+  z-index: 993;
+  top: 80px;
+}
+#ground4 {
+  z-index: 992;
+  top: 40px;
+}
+#ground5{
+  z-index: 989;
+}
+#ground6 {
+  z-index: 997;
+  top: 70px;
+}
+#lgate {
+  top: 240px;
+  z-index: 998;
+  left: -55px;
+}
+#rgate {
+  top: 240px;
+  z-index: 998;
+  left: 655px;
+}
+#herofinal2 {
+  width: 300px;
+  height: 600px;
+  z-index: 1000;
+}
+/* END OF GATE STYLING */
+
+/* BEGINNING OF #PICKER ANIMATION */
+.picker {
+  overflow: hidden;
+}
+
+.picker:hover #lgate {
+  transform: translateX(-200px);
+  transition: 2s;
+}
+.picker:hover #rgate {
+  transform: translateX(200px);
+  transition: 2s;
+}
+
+
+/* END OF PICKER ANIMATION */
+/* END OF HERO NAME STYLING */
+
+/* BEGINNING OF BRIEFING STYLING */
+.brief {
+  text-align: center;
+}
+.brief figcaption {
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  background-color: white;
+  padding: 15px;
+}
+
+/* BEGINNING OF ZOMBIE STYLING */
+.zombie {
+  background-image: url("../images/zback2.png");
+}
+#zbox {
+  width: 500px;
+  height: 600px;
+  margin: auto;
+  position: relative;
+}
+#zhead {
+  top: 0px;
+  left: 130px;
+  position: absolute;
+  z-index: 999;
+  -webkit-animation-name: zomb1;
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: zomb1;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes zomb1 {
+  0% {top: 2px;}
+  25% {top: 4px;}
+  50% {top: 8px;}
+  75% {top: 5px;}
+  100% {top: 3px;}
+}
+@keyframes zomb1 {
+  0% {top: 2px;}
+  25% {top: 4px;}
+  50% {top: 8px;}
+  75% {top: 5px;}
+  100% {top: 3px;}
+}
+#zbody {
+  left: 60px;
+  top: 120px;
+  position: absolute;
+  z-index: 998;
+  -webkit-animation-name: zomb2;
+  -webkit-animation-duration: 1.7s;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: zomb2;
+  animation-duration: 1.7s;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes zomb2 {
+  0% {top: 122px;}
+  25% {top: 124px;}
+  50% {top: 128px;}
+  75% {top: 125px;}
+  100% {top: 123px;}
+}
+@keyframes zomb2 {
+  0% {top: 122px;}
+  25% {top: 125px;}
+  50% {top: 129px;}
+  75% {top: 126px;}
+  100% {top: 123px;}
+}
+#zlarm {
+  left: 0px;
+  top: 145px;
+  position: absolute;
+  z-index: 997;
+  -webkit-animation-name: zomb3;
+  -webkit-animation-duration: 1.2s;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: zomb3;
+  animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes zomb3 {
+  0% {top: 145px;}
+  25% {top: 146px;}
+  50% {top: 149px;}
+  75% {top: 150px;}
+  100% {top: 146px;}
+}
+@keyframes zomb3 {
+  0% {top: 145px;}
+  25% {top: 146px;}
+  50% {top: 149px;}
+  75% {top: 150px;}
+  100% {top: 146px;}
+}
+#zrarm {
+  left: 340px;
+  top: 145px;
+  position: absolute;
+  z-index: 997;
+  -webkit-animation-name: zomb4;
+  -webkit-animation-duration: 1.2s;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: zomb4;
+  animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes zomb4 {
+  0% {top: 145px;}
+  25% {top: 152px;}
+  50% {top: 149px;}
+  75% {top: 148px;}
+  100% {top: 146px;}
+}
+@keyframes zomb4 {
+  0% {top: 145px;}
+  25% {top: 152px;}
+  50% {top: 149px;}
+  75% {top: 148px;}
+  100% {top: 146px;}
+}
+#zspine {
+  left: 165px;
+  top: 250px;
+  position: absolute;
+  z-index: 996;
+  -webkit-animation-name: zomb5;
+  -webkit-animation-duration: 1.8s;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: zomb5;
+  animation-duration: 1.8s;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes zomb5 {
+  0% {top: 250px;}
+  25% {top: 255px;}
+  50% {top: 257px;}
+  75% {top: 256px;}
+  100% {top: 252px;}
+}
+@keyframes zomb5 {
+  0% {top: 250px;}
+  25% {top: 255px;}
+  50% {top: 257px;}
+  75% {top: 256px;}
+  100% {top: 252px;}
+}
+#zlfoot {
+  left: 150px;
+  top: 420px;
+  position: absolute;
+  z-index: 995;
+  -webkit-animation-name: zomb6;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: zomb6;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes zomb6 {
+  0% {top: 420px;}
+  25% {top: 422px;}
+  50% {top: 423px;}
+  75% {top: 424px;}
+  100% {top: 422px;}
+}
+@keyframes zomb6 {
+  0% {top: 420px;}
+  25% {top: 422px;}
+  50% {top: 423px;}
+  75% {top: 424px;}
+  100% {top: 422px;}
+}
+#zrfoot {
+  left: 255px;
+  top: 360px;
+  position: absolute;
+  z-index: 995;
+  -webkit-animation-name: zomb7;
+  -webkit-animation-duration: 2.2s;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: zomb7;
+  animation-duration: 2.2s;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes zomb7 {
+  0% {top: 360px;}
+  25% {top: 362px;}
+  50% {top: 365px;}
+  75% {top: 364px;}
+  100% {top: 361px;}
+}
+@keyframes zomb7 {
+  0% {top: 360px;}
+  25% {top: 362px;}
+  50% {top: 365px;}
+  75% {top: 364px;}
+  100% {top: 361px;}
+}
+/* END OF ZOMBIE STYLING */
+/* END OF BRIEFING STYLING */
+
+/* BEGINNING OF CUSTOM HERO AVATAR TOGGLES */
+.avatar1 {
+  background-image: url("../images/av_1.png");
+}
+.avatar2 {
+  background-image: url("../images/av_2.png");
+}
+.avatar3 {
+  background-image: url("../images/av_3.png");
+}
+.avatar4 {
+  background-image: url("../images/av_4.png");
+}
+
+.gear1 {
+  background-image: url("../images/hat_4.png");
+}
+.gear2 {
+  background-image: url("../images/hat_2.png");
+}
+.gear3 {
+  background-image: url("../images/hat_5.png");
+}
+.gear4 {
+  background-image: url("../images/hat_1.png");
+}
+.gear5 {
+  background-image: url("../images/hat_6.png");
+}
+.gear6 {
+  background-image: url("../images/hat_3.png");
+}
+
+.gear7 {
+  background-image: url("../images/body_4.png");
+}
+.gear8 {
+  background-image: url("../images/body_1.png");
+}
+.gear9 {
+  background-image: url("../images/body_5.png");
+}
+.gear10 {
+  background-image: url("../images/body_2.png");
+}
+.gear11 {
+  background-image: url("../images/body_6.png");
+}
+.gear12 {
+  background-image: url("../images/body_3.png");
+}
+
+.gear13 {
+  background-image: url("../images/weapon_4.png");
+}
+.gear14 {
+  background-image: url("../images/weapon_1.png");
+}
+.gear15 {
+  background-image: url("../images/weapon_5.png");
+}
+.gear16 {
+  background-image: url("../images/weapon_2.png");
+}
+.gear17 {
+  background-image: url("../images/weapon_6.png");
+}
+.gear18 {
+  background-image: url("../images/weapon_3.png");
+}
+/* END OF CUSTOM HERO AVATAR TOGGLES */
+
+/* BEGINNING OF SECOND CHARACTER POSITIONING */
+#herobase{
+  position: absolute;
+  left: 480px;
+  width: 200px;
+  height: 280px;
+  z-index: 1001;
+  -webkit-animation-name: hero2;
+  -webkit-animation-duration: 6s;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: hero2;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes hero2 {
+  0% {top: 420px;}
+  25% {top: 421px;}
+  50% {top: 422px;}
+  75% {top: 423px;}
+  100% {top: 422px;}
+}
+@keyframes hero2{
+  0% {top: 420px;}
+  25% {top: 421px;}
+  50% {top: 422px;}
+  75% {top: 423px;}
+  100% {top: 422px;}
+}
+#head2 {
+  position: absolute;
+  left: 510px;
+  width: 140px;
+  height: 140px;
+  z-index: 1004;
+  background-size: contain;
+  -webkit-animation-name: headgear2;
+  -webkit-animation-duration: 1.8s;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: headgear2;
+  animation-duration: 1.8s;
+  animation-iteration-count: infinite;
+
+}
+@-webkit-keyframes headgear2 {
+  0% {top: 420px;}
+  25% {top: 422px;}
+  50% {top: 423px;}
+  75% {top: 424px;}
+  100% {top: 421px;}
+}
+@keyframes headgear2 {
+  0% {top: 420px;}
+  25% {top: 422px;}
+  50% {top: 423px;}
+  75% {top: 424px;}
+  100% {top: 421px;}
+}
+#body2 {
+  position: absolute;
+  left: 505px;
+  width: 150px;
+  height: 150px;
+  z-index: 1002;
+  background-size: contain;
+  -webkit-animation-name: bodygear2;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: bodygear2;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes bodygear2 {
+  0% {top: 500px;}
+  25% {top: 504px;}
+  50% {top: 502px;}
+  75% {top: 503px;}
+  100% {top: 501px;}
+}
+@keyframes bodygear2 {
+  0% {top: 500px;}
+  25% {top: 504px;}
+  50% {top: 502px;}
+  75% {top: 503px;}
+  100% {top: 501px;}
+}
+#weapon2 {
+  position: absolute;
+  left: 45px;
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+  z-index: 1005;
+  -webkit-animation-name: weapon2;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: weapon2;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes weapon2 {
+  0% {top: 75px;}
+  25% {top: 77px;}
+  50% {top: 78px;}
+  75% {top: 79px;}
+  100% {top: 76px;}
+}
+@keyframes weapon2 {
+  0% {top: 75px;}
+  25% {top: 77px;}
+  50% {top: 78px;}
+  75% {top: 79px;}
+  100% {top: 76px;}
+}
+/* END OF SECOND CHARACTER POSITIONING */
+
+/* BEGINNING OF COUNTER STYLING */
+#counter {
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 20px;
+  text-align: center;
+  border: 1px solid blue;
+  position: absolute;
+  top: 100px;
+  left: 200px;
+  visibility: hidden;
+}
+/* END OF COUNTER STYLING */
